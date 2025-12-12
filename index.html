@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Elegant Wedding Under 2K – Complete Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Plan a refined, unforgettable wedding for under 2,000 euros with our complete step-by-step guide, checklists and bonuses." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f7f3f0;
+      --bg-alt: #ffffff;
+      --primary: #b37776;
+      --primary-dark: #8f5554;
+      --accent: #f0d2c5;
+      --text: #2a2625;
+      --muted: #7a6f6a;
+      --border: #e3d5cd;
+      --success: #3a9252;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Lora", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.1rem;
+    }
+
+    /* HERO – mobile first */
+    header.hero {
+      background: radial-gradient(circle at top left, #fbe8df 0, #f7f3f0 50%, #fdfdfd 100%);
+      padding: 2rem 0 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: rgba(179, 119, 118, 0.08);
+      top: -140px;
+      right: -100px;
+      z-index: 0;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.25rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(179, 119, 118, 0.08);
+      color: var(--primary-dark);
+      font-size: 0.85rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .badge span.icon {
+      font-size: 1.1rem;
+    }
+
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-size: 2.1rem;
+      line-height: 1.15;
+      margin: 0 0 0.8rem;
+      color: var(--primary-dark);
+    }
+
+    h1 span.script {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-weight: 500;
+      color: var(--primary);
+    }
+
+    .hero-subtitle {
+      font-size: 0.98rem;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+    }
+
+    .price-line {
+      margin: 1rem 0 0.6rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.6rem;
+    }
+
+    .price-line .old {
+      text-decoration: line-through;
+      color: #c19f9e;
+      font-size: 0.9rem;
+    }
+
+    .price-line .current {
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--success);
+    }
+
+    .price-line .note {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      align-items: center;
+      margin-top: 0.9rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      border-radius: 999px;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      cursor: pointer;
+      font-size: 0.92rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      transition: all 0.15s ease-out;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #b37776, #8f5554);
+      color: #fff;
+      box-shadow: 0 12px 24px rgba(143, 85, 84, 0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 30px rgba(143, 85, 84, 0.4);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--primary-dark);
+      border: 1px solid rgba(143, 85, 84, 0.18);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(143, 85, 84, 0.07);
+    }
+
+    .hero-secure {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.7rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .hero-secure span.icon {
+      font-size: 1.1rem;
+    }
+
+    .hero-card {
+      background: var(--bg-alt);
+      border-radius: 1.3rem;
+      padding: 1.2rem 1.2rem 1.4rem;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(14px);
+      position: relative;
+    }
+
+    .hero-card-tag {
+      position: absolute;
+      top: 0.9rem;
+      right: 1rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      background: var(--accent);
+      color: var(--primary-dark);
+    }
+
+    .hero-card img.main-photo {
+      border-radius: 1rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .hero-card-photos {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.4rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .hero-card-photos img {
+      border-radius: 0.6rem;
+      height: 70px;
+      object-fit: cover;
+    }
+
+    .hero-card-quote {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-card-quote strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .hero-card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .hero-card-stars {
+      color: #f2a900;
+      letter-spacing: 0.05em;
+      font-size: 0.85rem;
+    }
+
+    /* Sections – mobile first */
+    section {
+      padding: 2.3rem 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 1.8rem;
+    }
+
+    .section-title h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.6rem;
+      margin: 0 0 0.3rem;
+      color: var(--primary-dark);
+    }
+
+    .section-title p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .card {
+      background: var(--bg-alt);
+      border-radius: 1.1rem;
+      padding: 1.2rem 1.25rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.03);
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-family: "Playfair Display", serif;
+      font-size: 1.15rem;
+      margin-bottom: 0.4rem;
+      color: var(--primary-dark);
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.4rem 0 0;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.55rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+      padding: 0.12rem 0;
+    }
+
+    .check-list li span.icon {
+      color: var(--success);
+      font-size: 1rem;
+      margin-top: 0.1rem;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(179, 119, 118, 0.2);
+      background: rgba(179, 119, 118, 0.05);
+      color: var(--primary-dark);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 0.7rem;
+    }
+
+    .learn-note {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-top: 0.6rem;
+    }
+
+    .learn-card {
+      background: #fdf8f4;
+      border-radius: 1.1rem;
+      padding: 1.1rem 1.25rem;
+      border: 1px solid rgba(179, 119, 118, 0.2);
+      margin-top: 1.3rem;
+    }
+
+    .learn-card h3 {
+      font-family: "Playfair Display";
+      margin: 0 0 0.3rem;
+      font-size: 1.05rem;
+      color: var(--primary-dark);
+    }
+
+    .bonuses-grid .card {
+      margin-bottom: 1.1rem;
+    }
+
+    .bonus-tag {
+      font-size: 0.78rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--primary-dark);
+      margin-bottom: 0.15rem;
+    }
+
+    .bonus-price {
+      margin-top: 0.4rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .bonus-price span {
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+
+    /* Pricing – mobile first */
+    .pricing-section {
+      background: radial-gradient(circle at top, #f5ddd1 0, #f7f3f0 40%, #f7f3f0 100%);
+      padding: 2.8rem 0 3.2rem;
+    }
+
+    .price-card {
+      background: #fff;
+      border-radius: 1.3rem;
+      padding: 1.5rem 1.4rem 1.7rem;
+      border: 1px solid #f0d2c5;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+      position: relative;
+      margin-bottom: 1.4rem;
+    }
+
+    .price-card.featured {
+      border-color: #b37776;
+    }
+
+    .price-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--muted);
+      margin-bottom: 0.15rem;
+    }
+
+    .price-name {
+      font-family: "Playfair Display";
+      font-size: 1.25rem;
+      margin: 0 0 0.35rem;
+      color: var(--primary-dark);
+    }
+
+    .price-value {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin: 0.15rem 0 0.15rem;
+    }
+
+    .price-old {
+      font-size: 0.82rem;
+      color: #b9a29c;
+      text-decoration: line-through;
+    }
+
+    .price-note {
+      font-size: 0.86rem;
+      color: var(--muted);
+      margin-bottom: 0.7rem;
+    }
+
+    .price-card .check-list {
+      margin-bottom: 0.9rem;
+    }
+
+    .ribbon {
+      position: absolute;
+      top: 1rem;
+      right: 1.2rem;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      background: #f0d2c5;
+      color: var(--primary-dark);
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+    }
+
+    /* Testimonials – mobile first */
+    .testimonials-grid .testimonial {
+      margin-bottom: 1rem;
+    }
+
+    .testimonial {
+      background: var(--bg-alt);
+      border-radius: 1.1rem;
+      padding: 1rem 1.05rem 1.2rem;
+      border: 1px solid var(--border);
+      font-size: 0.9rem;
+      position: relative;
+    }
+
+    .testimonial::before {
+      content: "“";
+      position: absolute;
+      font-family: "Playfair Display";
+      font-size: 3rem;
+      color: rgba(179, 119, 118, 0.18);
+      top: -0.4rem;
+      left: 0.65rem;
+    }
+
+    .testimonial p {
+      margin: 0.3rem 0 0.6rem;
+      color: var(--muted);
+    }
+
+    .testimonial strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .testimonial-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+    }
+
+    .testimonial-stars {
+      color: #f2a900;
+      font-size: 0.8rem;
+    }
+
+    /* About – mobile first */
+    .about-photo {
+      border-radius: 1.3rem;
+      overflow: hidden;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+      background: #f0d2c5;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-photo-main {
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    .about-photo-main img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .about-photo-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.4rem;
+    }
+
+    .about-photo-strip img {
+      border-radius: 0.6rem;
+      height: 64px;
+      object-fit: cover;
+    }
+
+    .about-photo-inner {
+      width: 100%;
+      border-radius: 1rem;
+      background: #fff;
+      padding: 0.9rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      margin-top: 0.5rem;
+    }
+
+    .about-photo-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #f7f3f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+
+    .about-name {
+      font-weight: 600;
+      color: var(--primary-dark);
+      font-size: 0.9rem;
+    }
+
+    .about-role {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    .about-signature {
+      font-family: "Playfair Display";
+      font-style: italic;
+      color: var(--primary);
+      font-size: 1.15rem;
+      margin-top: 0.2rem;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.6rem;
+    }
+
+    .gallery-grid img {
+      border-radius: 0.9rem;
+      height: 130px;
+      object-fit: cover;
+    }
+
+    /* FAQ & Guarantee – mobile first */
+    details {
+      background: var(--bg-alt);
+      border-radius: 0.9rem;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--border);
+      margin-bottom: 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    details summary {
+      cursor: pointer;
+      list-style: none;
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
+
+    details[open] {
+      border-color: var(--primary);
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.04);
+    }
+
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details summary::after {
+      content: "+";
+      float: right;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    details[open] summary::after {
+      content: "–";
+    }
+
+    details p {
+      margin-top: 0.55rem;
+      color: var(--muted);
+    }
+
+    .guarantee-card {
+      background: #fff;
+      border-radius: 1.2rem;
+      padding: 1.3rem 1.3rem 1.5rem;
+      border: 1px solid #f0d2c5;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+      text-align: center;
+      margin-top: 1.3rem;
+    }
+
+    .badge-soft {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(58, 146, 82, 0.07);
+      color: var(--success);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      margin-bottom: 0.6rem;
+    }
+
+    .guarantee-card h3 {
+      margin: 0 0 0.4rem;
+      font-family: "Playfair Display";
+      color: var(--primary-dark);
+      font-size: 1.25rem;
+    }
+
+    .guarantee-card p {
+      margin: 0.2rem 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* CTA bottom */
+    .cta-section {
+      padding: 2.5rem 0 3rem;
+      border-top: 1px solid #e1d3c9;
+      background: #fdfaf7;
+    }
+
+    .cta-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .cta-inner h2 {
+      font-family: "Playfair Display";
+      font-size: 1.7rem;
+      margin: 0 0 0.6rem;
+      color: var(--primary-dark);
+    }
+
+    .cta-inner p {
+      margin: 0 0 1rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    /* Footer */
+    footer {
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--muted);
+      background: #f4ece7;
+      border-top: 1px solid #e1d3c9;
+    }
+
+    footer a {
+      color: var(--primary-dark);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    /* MODAL */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.3rem;
+      z-index: 50;
+    }
+
+    .modal-backdrop.active {
+      display: flex;
+    }
+
+    .modal {
+      background: #fff;
+      border-radius: 1.3rem;
+      max-width: 480px;
+      width: 100%;
+      padding: 1.6rem 1.4rem 1.5rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 0.8rem;
+      right: 0.9rem;
+      border: none;
+      background: transparent;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: var(--muted);
+    }
+
+    .modal-badge {
+      font-size: 0.76rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--primary-dark);
+      margin-bottom: 0.2rem;
+    }
+
+    .modal h3 {
+      margin: 0 0 0.4rem;
+      font-family: "Playfair Display";
+      font-size: 1.3rem;
+      color: var(--primary-dark);
+    }
+
+    .modal p {
+      margin: 0.2rem 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .modal-price {
+      margin-top: 0.7rem;
+      font-size: 1.1rem;
+      color: var(--primary-dark);
+    }
+
+    .modal-price strong {
+      font-size: 1.4rem;
+    }
+
+    .modal-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-top: 1.1rem;
+    }
+
+    .btn-secondary-light {
+      background: #f7f3f0;
+      color: var(--primary-dark);
+      border: 1px solid var(--border);
+    }
+
+    .modal-note {
+      margin-top: 0.7rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    /* Desktop / tablet enhancements */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: clamp(2.3rem, 3vw + 1rem, 3.3rem);
+      }
+
+      .hero-inner {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+        gap: 2.5rem;
+        align-items: center;
+      }
+
+      section {
+        padding: 3rem 0;
+      }
+
+      .section-title h2 {
+        font-size: 2rem;
+      }
+
+      .pain-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.4rem;
+      }
+
+      .learn-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+        gap: 2.3rem;
+        align-items: start;
+      }
+
+      .bonuses-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.4rem;
+      }
+
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.6rem;
+        max-width: 860px;
+        margin: 0 auto;
+      }
+
+      .price-card.featured {
+        transform: translateY(-6px);
+      }
+
+      .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.3rem;
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        gap: 2.4rem;
+        align-items: center;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .faq-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+        gap: 2rem;
+        align-items: start;
+      }
+
+      .guarantee-card {
+        margin-top: 0;
+      }
+    }
+  </style>
+</head>
+<body class="page">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div>
+          <div class="badge">
+            <span class="icon">💍</span>
+            Under €2,000 – Without Sacrificing Elegance
+          </div>
+          <h1>
+            Plan a <span class="script">Sophisticated Wedding</span><br />
+            For Less Than <span class="script">€2,000</span>.
+          </h1>
+          <p class="hero-subtitle">
+            A complete, step-by-step guide to create a refined, unforgettable celebration
+            on a realistic budget – even if you have little time and no event-planning experience.
+          </p>
+
+          <div class="price-line">
+            <span class="old">Regular price: €37</span>
+            <span class="current">Today: €7</span>
+            <span class="note">one-time payment, instant digital access</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#pricing" class="btn btn-primary">
+              Get Instant Access
+              <span>→</span>
+            </a>
+            <a href="#gallery" class="btn btn-ghost">
+              See wedding photo ideas
+            </a>
+          </div>
+
+          <div class="hero-secure">
+            <span class="icon">🔒</span>
+            <span>Secure checkout • No monthly fees • 7-day satisfaction guarantee</span>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="hero-card-tag">Real bride result</div>
+          <img src="https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bride and groom walking" class="main-photo" />
+
+          <div class="hero-card-photos">
+            <img src="https://images.pexels.com/photos/2306279/pexels-photo-2306279.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Elegant wedding venue" />
+            <img src="https://images.pexels.com/photos/265947/pexels-photo-265947.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Wedding table decoration" />
+            <img src="https://images.pexels.com/photos/2959192/pexels-photo-2959192.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Couple in ceremony" />
+          </div>
+
+          <p class="hero-card-quote">
+            “Our wedding felt like a luxury event, but we spent just <strong>€1,284</strong>.
+            The guide showed us exactly where to invest and where to save – our guests still
+            talk about how magical it was.”
+          </p>
+          <div class="hero-card-meta">
+            <div>
+              <strong>Elena &amp; Miguel</strong><br />
+              Barcelona, 148 guests
+            </div>
+            <div class="hero-card-stars">
+              ★★★★★
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAIN POINTS -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Dream Wedding, Real Budget</h2>
+        <p>
+          You don’t need a wedding planner or a huge bank account to create a sophisticated celebration.
+          You need a clear strategy.
+        </p>
+      </div>
+
+      <div class="pain-grid">
+        <div class="card">
+          <h3>Does this sound familiar?</h3>
+          <ul class="check-list">
+            <li><span class="icon">•</span>Every Pinterest idea looks expensive and impossible to adapt.</li>
+            <li><span class="icon">•</span>You feel lost with guest list, timeline, décor, catering and ceremony details.</li>
+            <li><span class="icon">•</span>You worry about spending more than you can – or worse, starting married life in debt.</li>
+            <li><span class="icon">•</span>You don’t have time to research legal requirements, suppliers and budgets.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Imagine instead…</h3>
+          <p>
+            Walking into your ceremony knowing every detail has been elegantly planned, your budget is under control
+            and you can simply enjoy the moment with your partner and guests.
+          </p>
+          <ul class="check-list">
+            <li><span class="icon">✓</span>A clear, realistic budget under €2,000 – already broken down for you.</li>
+            <li><span class="icon">✓</span>Professional checklists and timelines, adapted for modern European weddings.</li>
+            <li><span class="icon">✓</span>Smart strategies to negotiate with vendors – without feeling awkward.</li>
+            <li><span class="icon">✓</span>Elegant décor and styling ideas that look luxurious but cost very little.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU WILL LEARN -->
+  <section id="learn">
+    <div class="container">
+      <div class="learn-layout">
+        <div>
+          <div class="pill">Inside the Elegant Wedding Under 2K Guide</div>
+          <h2 style="font-family:'Playfair Display',serif;font-size:1.8rem;margin:0 0 .8rem;color:var(--primary-dark);">
+            What You Will Learn, Step by Step
+          </h2>
+          <p style="margin-top:0;color:var(--muted);font-size:.94rem;">
+            The guide is designed so you can start planning immediately – even this week.
+            Simply follow the pages and fill in the worksheets as you go.
+          </p>
+
+          <ul class="check-list">
+            <li>
+              <span class="icon">✔</span>
+              <strong>Guest List Strategy:</strong> how to reduce costs gracefully without hurting anyone’s feelings.
+            </li>
+            <li>
+              <span class="icon">✔</span>
+              <strong>Venue &amp; Ceremony:</strong> affordable locations that still look stunning in photos,
+              plus practical tips for outdoor celebrations.
+            </li>
+            <li>
+              <span class="icon">✔</span>
+              <strong>Budget Blueprint:</strong> pre-filled budget models under €2,000 – just adjust to your reality.
+            </li>
+            <li>
+              <span class="icon">✔</span>
+              <strong>Décor &amp; Styling:</strong> color palettes, florals and table styling that feel bespoke, not DIY.
+            </li>
+            <li>
+              <span class="icon">✔</span>
+              <strong>Food &amp; Drinks:</strong> creative menu ideas that impress guests without hiring a full-service caterer.
+            </li>
+            <li>
+              <span class="icon">✔</span>
+              <strong>Vendors &amp; Contracts:</strong> what to ask, what to negotiate, and how to avoid common traps.
+            </li>
+            <li>
+              <span class="icon">✔</span>
+              <strong>Timeline &amp; Logistics:</strong> from engagement to honeymoon, including day-of timeline templates.
+            </li>
+          </ul>
+
+          <p class="learn-note">
+            All of this is presented in clear, simple language – you don’t need any previous event-planning experience.
+          </p>
+        </div>
+
+        <div class="learn-card">
+          <h3>Perfect for busy couples</h3>
+          <p>
+            The guide was created for couples who work, study and juggle a thousand responsibilities,
+            but still want a graceful, well-organised wedding.
+          </p>
+          <ul class="check-list">
+            <li><span class="icon">⏱</span>Plan in short, focused sessions (as little as 30 minutes per week).</li>
+            <li><span class="icon">📱</span>Use it directly from your phone or tablet – print only if you want.</li>
+            <li><span class="icon">🤍</span>Share specific pages with friends or family who are helping.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BONUSES -->
+  <section id="bonuses">
+    <div class="container">
+      <div class="section-title">
+        <h2>Exclusive Bonuses Included</h2>
+        <p>For a limited time, all bonuses below are included with the main guide at no extra cost.</p>
+      </div>
+
+      <div class="bonuses-grid">
+        <div class="card">
+          <div class="bonus-tag">Bonus #1 · Master Checklist Planner</div>
+          <p style="font-size:.9rem;color:var(--muted);">
+            A printable &amp; digital planner with all tasks organised by month and priority:
+            guest list, payments, décor, music, photos, legal documents and more.
+          </p>
+          <p class="bonus-price">Standalone value: <span>€18</span></p>
+        </div>
+
+        <div class="card">
+          <div class="bonus-tag">Bonus #2 · Home &amp; Honeymoon Essentials List</div>
+          <p style="font-size:.9rem;color:var(--muted);">
+            A refined “new home” and honeymoon checklist so you only buy what you will truly use,
+            avoiding impulse purchases and wasted money.
+          </p>
+          <p class="bonus-price">Standalone value: <span>€17</span></p>
+        </div>
+
+        <div class="card">
+          <div class="bonus-tag">Bonus #3 · Civil Ceremony &amp; Legal Guide</div>
+          <p style="font-size:.9rem;color:var(--muted);">
+            Understand legal requirements, documents, deadlines and civil ceremony options in a clear,
+            stress-free way – so there are no surprises close to the date.
+          </p>
+          <p class="bonus-price">Standalone value: <span>€12</span></p>
+        </div>
+
+        <div class="card">
+          <div class="bonus-tag">Bonus #4 · Wedding Color Palette Workbook</div>
+          <p style="font-size:.9rem;color:var(--muted);">
+            Professionally-curated color combinations for all seasons
+            (bouquets, bridesmaids, décor and stationery) with moodboards and suggestions.
+          </p>
+          <p class="bonus-price">Standalone value: <span>€19</span></p>
+        </div>
+
+        <div class="card">
+          <div class="bonus-tag">Bonus #5 · Perfect Date &amp; Season Guide</div>
+          <p style="font-size:.9rem;color:var(--muted);">
+            Choose your wedding date strategically, considering venue prices, holidays, weather,
+            guest travel and availability – and still keep the magic of “your” day.
+          </p>
+          <p class="bonus-price">Standalone value: <span>€15</span></p>
+        </div>
+
+        <div class="card">
+          <div class="bonus-tag">+ Surprise Bonus</div>
+          <p style="font-size:.9rem;color:var(--muted);">
+            A discreet extra gift sent to your email after purchase,
+            designed to bring even more calm and clarity to your planning.
+          </p>
+          <p class="bonus-price">Special launch gift</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="pricing-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Choose Your Access</h2>
+        <p>Both options include secure payment, immediate digital delivery and support via email.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- BASIC -->
+        <div class="price-card">
+          <div class="price-label">Essential plan</div>
+          <h3 class="price-name">Elegant Wedding Guide</h3>
+          <div class="price-value">€2</div>
+          <div class="price-old">Original value: €19</div>
+          <p class="price-note">
+            Perfect if you already have some planning experience and only need the main strategy.
+          </p>
+          <ul class="check-list">
+            <li><span class="icon">✓</span>Main guide: Elegant Wedding Under 2K (full methodology).</li>
+            <li><span class="icon">✓</span>Budget spreadsheet template.</li>
+            <li><span class="icon">✓</span>Email support for 7 days.</li>
+          </ul>
+          <!-- Button triggers modal -->
+          <a href="#checkout-basic" id="btn-essential" class="btn btn-ghost" style="width:100%;justify-content:center;margin-top:.2rem;">
+            Choose Essential Plan
+          </a>
+        </div>
+
+        <!-- COMPLETE -->
+        <div class="price-card featured">
+          <div class="ribbon">Most popular</div>
+          <div class="price-label">Complete experience</div>
+          <h3 class="price-name">Guide + All Bonuses</h3>
+          <div class="price-value">€7</div>
+          <div class="price-old">Total value with bonuses: €80+</div>
+          <p class="price-note">
+            Ideal for couples who want maximum clarity and support, from the proposal to the last guest leaving.
+          </p>
+          <ul class="check-list">
+            <li><span class="icon">✓</span>Elegant Wedding Under 2K – full digital guide.</li>
+            <li><span class="icon">✓</span>Master Checklist Planner.</li>
+            <li><span class="icon">✓</span>Home &amp; Honeymoon Essentials List.</li>
+            <li><span class="icon">✓</span>Civil Ceremony &amp; Legal Guide.</li>
+            <li><span class="icon">✓</span>Wedding Color Palette Workbook.</li>
+            <li><span class="icon">✓</span>Perfect Date &amp; Season Guide.</li>
+            <li><span class="icon">✓</span>Surprise bonus after purchase.</li>
+          </ul>
+          <a href="#checkout-complete" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:.2rem;">
+            Yes, I Want the Complete Plan
+          </a>
+          <p style="margin-top:.65rem;font-size:.8rem;color:var(--muted);text-align:center;">
+            Recommended for first-time brides &amp; grooms · Best value
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-title">
+        <h2>Couples Who Planned With This Guide</h2>
+        <p>Real stories from people who decided to invest a few euros to save hundreds.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <p>
+            “Our wedding is in August and the total cost is estimated at <strong>€968</strong>.
+            Before the guide we had no idea where to start. Now every step is organised –
+            from the ceremony playlist to the seating plan.”
+          </p>
+          <div class="testimonial-footer">
+            <span><strong>Sofia &amp; Daniel</strong> · Lisbon</span>
+            <span class="testimonial-stars">★★★★★</span>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p>
+            “The best thing that happened during our planning. We were about to hire an expensive planner,
+            but with the guide we felt confident doing everything ourselves and saved more than <strong>€500</strong>.”
+          </p>
+          <div class="testimonial-footer">
+            <span><strong>Hannah &amp; Mark</strong> · Dublin</span>
+            <span class="testimonial-stars">★★★★★</span>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p>
+            “We wanted something intimate but elegant. The color palette workbook alone was worth the price.
+            The photos look like a high-end wedding magazine – and we stayed under <strong>€1,300</strong>.”
+          </p>
+          <div class="testimonial-footer">
+            <span><strong>Léa &amp; Thomas</strong> · Paris</span>
+            <span class="testimonial-stars">★★★★★</span>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p>
+            “I loved that everything is adapted for European weddings. Legal information, timing, small cultural details…
+            It felt like having an experienced friend guiding us.”
+          </p>
+          <div class="testimonial-footer">
+            <span><strong>Chiara &amp; Luca</strong> · Milan</span>
+            <span class="testimonial-stars">★★★★☆</span>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p>
+            “We were both working full-time and had very little energy for planning.
+            The short checklists helped us stay on track without arguments or stress.”
+          </p>
+          <div class="testimonial-footer">
+            <span><strong>Emma &amp; Jonas</strong> · Berlin</span>
+            <span class="testimonial-stars">★★★★★</span>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p>
+            “Honestly, I was sceptical because of the price. But it was the <strong>best</strong> investment we made.
+            I recommend it to every engaged friend now.”
+          </p>
+          <div class="testimonial-footer">
+            <span><strong>Ana &amp; Pedro</strong> · Madrid</span>
+            <span class="testimonial-stars">★★★★★</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT THE AUTHOR + PHOTOS -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo">
+          <div class="about-photo-main">
+            <img src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Wedding venue at sunset" />
+          </div>
+          <div class="about-photo-strip">
+            <img src="https://images.pexels.com/photos/265856/pexels-photo-265856.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Wedding cake" />
+            <img src="https://images.pexels.com/photos/313707/pexels-photo-313707.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bridal bouquet" />
+            <img src="https://images.pexels.com/photos/265920/pexels-photo-265920.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Couple dancing" />
+          </div>
+
+          <div class="about-photo-inner">
+            <div class="about-photo-circle">👩‍💼</div>
+            <div class="about-role">Wedding Strategist</div>
+            <div class="about-name">Aline Costa</div>
+            <p style="font-size:.84rem;color:var(--muted);margin:.3rem 0 .4rem;">
+              Planned her own elegant wedding with <strong>124 guests for €1,246.91</strong>,
+              and has since helped dozens of couples do the same.
+            </p>
+            <div class="about-signature">Aline</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-title" style="text-align:left;margin-bottom:1rem;">
+            <h2 style="margin-bottom:.3rem;">Nice to Meet You</h2>
+            <p style="max-width:32rem;">
+              I created this guide so couples can focus on love – not on chaos and financial stress.
+            </p>
+          </div>
+          <p style="color:var(--muted);font-size:.94rem;">
+            When I started planning my own wedding, every blog and magazine seemed to suggest
+            one thing: spend more. More flowers, more décor, more “must-have” extras.
+            The numbers quickly became unrealistic.
+          </p>
+          <p style="color:var(--muted);font-size:.94rem;">
+            Instead of giving up, I used my background in project management and data analysis
+            to build a complete, structured system: budget, timelines, suppliers, décor, everything.
+            The result? A sophisticated wedding, zero debt and countless messages from guests
+            saying it was one of the most charming events they had attended.
+          </p>
+          <p style="color:var(--muted);font-size:.94rem;">
+            Since then I have refined this method and tested it with many other couples.
+            The <strong>Elegant Wedding Under 2K Guide</strong> is the result – the exact process I wish I had
+            from day one, now available to you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEDDING GALLERY -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-title">
+        <h2>Wedding Inspiration Gallery</h2>
+        <p>Realistic ideas for venues, décor and photography you can adapt to your own day.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <img src="https://images.pexels.com/photos/169211/pexels-photo-169211.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Outdoor wedding ceremony" />
+        <img src="https://images.pexels.com/photos/1603884/pexels-photo-1603884.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Table setting with candles" />
+        <img src="https://images.pexels.com/photos/2788492/pexels-photo-2788492.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Couple under lights" />
+        <img src="https://images.pexels.com/photos/752842/pexels-photo-752842.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Wedding arch with flowers" />
+        <img src="https://images.pexels.com/photos/2291462/pexels-photo-2291462.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bride holding bouquet" />
+        <img src="https://images.pexels.com/photos/169214/pexels-photo-169214.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Reception hall" />
+        <img src="https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Couple walking in garden" />
+        <img src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Wedding rings" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + GUARANTEE -->
+  <section id="faq">
+    <div class="container">
+      <div class="faq-grid">
+        <div>
+          <div class="section-title" style="text-align:left;margin-bottom:.9rem;">
+            <h2 style="margin-bottom:.4rem;">Questions &amp; Answers</h2>
+            <p style="max-width:30rem;">
+              If you’re still unsure, these answers may help you decide calmly.
+            </p>
+          </div>
+
+          <details open>
+            <summary>How will I receive the guide and bonuses?</summary>
+            <p>
+              Right after your payment is approved, you will receive an email with a secure link
+              to download the main guide and all bonuses in PDF format.
+              You can read them on your phone, tablet or computer, and print any pages you like.
+            </p>
+          </details>
+
+          <details>
+            <summary>Is this only for small weddings?</summary>
+            <p>
+              No. The method works for both intimate and larger celebrations.
+              You will see real examples from weddings with more than 100 guests under €2,000.
+              You can adapt the templates to your specific guest count and style.
+            </p>
+          </details>
+
+          <details>
+            <summary>Does it work in my country?</summary>
+            <p>
+              The guide was written with European reality in mind (prices, legal aspects and suppliers),
+              but the principles work anywhere: clear budgeting, smart negotiation and elegant,
+              cost-effective styling.
+            </p>
+          </details>
+
+          <details>
+            <summary>What if I already booked some services?</summary>
+            <p>
+              No problem. You can use the guide to optimise what you have already booked,
+              adjust your remaining budget and avoid unnecessary extras.
+            </p>
+          </details>
+
+          <details>
+            <summary>Do I need any special software?</summary>
+            <p>
+              No. All materials are in PDF format, plus a simple spreadsheet that works in Excel,
+              Google Sheets or any free alternative.
+            </p>
+          </details>
+        </div>
+
+        <div>
+          <div class="guarantee-card">
+            <div class="badge-soft">
+              <span>✓</span> 7-Day Peace-of-Mind Guarantee
+            </div>
+            <h3>Try It Without Risk</h3>
+            <p>
+              Read the guide, explore the bonuses, start adapting the checklists to your wedding.
+              If within 7 days you feel it doesn’t help you at all, simply send an email and
+              you’ll receive a full refund.
+            </p>
+            <p>
+              No explanations required, no questions asked. We want you to feel completely confident
+              about every decision in this beautiful season of your life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>Ready to Plan Your Elegant Wedding Under €2,000?</h2>
+        <p>
+          In a few minutes you can have every step, checklist and strategy in your hands.
+          The sooner you start, the more you save – and the calmer your planning becomes.
+        </p>
+
+        <div class="hero-actions" style="justify-content:center;margin-top:.4rem;">
+          <a href="#checkout-complete" class="btn btn-primary">
+            Get the Complete Plan for €7
+          </a>
+          <a href="#pricing" class="btn btn-ghost">
+            See both options again
+          </a>
+        </div>
+
+        <p style="margin-top:1rem;font-size:.8rem;color:var(--muted);">
+          One-time payment · Instant digital access · No hidden fees
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>
+        © <span id="year"></span> Elegant Wedding Under 2K · All rights reserved.
+      </p>
+      <p>
+        For support, contact <a href="mailto:casamentoeconomico2000@gmail.com">casamentoeconomico2000@gmail.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- DISCOUNT MODAL -->
+  <div class="modal-backdrop" id="discount-modal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+      <div class="modal-badge">Special upgrade just for you</div>
+      <h3 id="modal-title">Wait! Upgrade to the Complete Plan for 50% Off</h3>
+      <p>
+        Since you chose the <strong>Essential Plan</strong>, you can unlock the
+        <strong>Complete Plan</strong> – with all bonuses – for a one-time
+        discount of <strong>50% off</strong>.
+      </p>
+      <p class="modal-price">
+        Complete Plan today for only <strong>€3.50</strong> instead of €7.
+      </p>
+
+      <div class="modal-actions">
+        <a href="#checkout-complete-discount" class="btn btn-primary" id="btn-upgrade">
+          Yes, I Want 50% Off
+        </a>
+        <button class="btn btn-secondary-light" id="btn-keep-essential">
+          No, continue with Essential Plan only
+        </button>
+      </div>
+
+      <p class="modal-note">
+        You will still receive all files digitally, with secure payment and our 7-day guarantee.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Modal logic
+    const modalBackdrop = document.getElementById("discount-modal");
+    const btnEssential = document.getElementById("btn-essential");
+    const btnClose = document.getElementById("modal-close");
+    const btnKeep = document.getElementById("btn-keep-essential");
+
+    function openModal() {
+      modalBackdrop.classList.add("active");
+    }
+
+    function closeModal() {
+      modalBackdrop.classList.remove("active");
+    }
+
+    if (btnEssential) {
+      btnEssential.addEventListener("click", function (e) {
+        e.preventDefault();
+        openModal();
+      });
+    }
+
+    if (btnClose) {
+      btnClose.addEventListener("click", closeModal);
+    }
+
+    if (btnKeep) {
+      btnKeep.addEventListener("click", function () {
+        // here you could redirect to Essential checkout if you want
+        closeModal();
+      });
+    }
+
+    modalBackdrop.addEventListener("click", function (e) {
+      if (e.target === modalBackdrop) {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+</html>
